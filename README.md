@@ -31,6 +31,8 @@ https://raw.githubusercontent.com/ReWelp/HayasexShiru-Extensions/main/shiru/inde
 
 | Alternatively | `gh:ReWelp/HayasexShiru-Extensions/shiru` |
 
+// note: *you must enable Adult Content (Hentai) in settings to be able to use Sukebei on Shiru.*
+
 ---
 
 ## Support
