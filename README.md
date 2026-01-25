@@ -9,8 +9,8 @@ Includes **Nyaa** and **Sukebei** support.
 
 ## Available Sources
 
-- **Nyaa** – Nyaa tracker extensions
-- **Sukebei** – Sukebei tracker extensions
+- **Nyaa** – Nyaa extensions
+- **Sukebei** – Sukebei extensions
 
 ---
 
