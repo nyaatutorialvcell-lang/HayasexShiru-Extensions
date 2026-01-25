@@ -49,7 +49,6 @@ const shiruIndex = {
     icon: s.icon,
     update:
       "https://raw.githubusercontent.com/ReWelp/HayasexShiru-Extensions/main/shiru/index.json",
-    code: `${s.id}/code.js`,
   })),
 };
 
