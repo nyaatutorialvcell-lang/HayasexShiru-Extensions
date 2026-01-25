@@ -1,15 +1,12 @@
-export default async function search(query) {
-  const url =
-    'https://torrent-search-api-livid.vercel.app/api/sukebei/' +
-    encodeURIComponent(query)
+export default {
+  id: "sukebei",
+  name: "Sukebei",
+  type: "torrent",
 
-  const res = await fetch(url)
-  const data = await res.json()
-
-  if (!Array.isArray(data)) return []
-
-  return data.map(item => ({
-    title: item.Name || '',
-    link: item.Magnet || ''
-  }))
+  async search(query) {
+    return {
+      engine: "sukebei",
+      query
+    }
+  }
 }
