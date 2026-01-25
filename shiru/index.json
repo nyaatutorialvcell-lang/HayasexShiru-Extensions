@@ -4,23 +4,23 @@
       "id": "nyaa",
       "name": "Nyaa",
       "version": "1.0.1",
-      "main": "https://raw.githubusercontent.com/ReWelp/HayasexShiru-Extensions/main/shiru/nyaa/code.js",
+      "main": "./nyaa/code.js",
       "type": "torrent",
       "nsfw": false,
       "description": "Shiru extension for Nyaa",
       "icon": "https://nyaa.si/static/favicon.png",
-      "update": "https://raw.githubusercontent.com/ReWelp/HayasexShiru-Extensions/main/shiru/index.json"
+      "update": "gh:ReWelp/HayasexShiru-Extensions/shiru"
     },
     {
       "id": "sukebei",
       "name": "Sukebei",
       "version": "1.0.1",
-      "main": "https://raw.githubusercontent.com/ReWelp/HayasexShiru-Extensions/main/shiru/sukebei/code.js",
+      "main": "./sukebei/code.js",
       "type": "torrent",
       "nsfw": true,
       "description": "Shiru extension for Sukebei",
       "icon": "https://sukebei.nyaa.si/static/favicon.png",
-      "update": "https://raw.githubusercontent.com/ReWelp/HayasexShiru-Extensions/main/shiru/index.json"
+      "update": "gh:ReWelp/HayasexShiru-Extensions/shiru"
     }
   ]
 }

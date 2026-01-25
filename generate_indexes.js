@@ -20,24 +20,24 @@ const sources = [
 
 const REPO_BASE = "https://raw.githubusercontent.com/ReWelp/HayasexShiru-Extensions/main";
 
-// Shiru index - FIXED: Use absolute URLs
+// Shiru index
 const shiruIndex = {
   sources: sources.map((s) => ({
     id: s.id,
     name: s.name,
     version: s.version,
-    main: `${REPO_BASE}/shiru/${s.id}/code.js`, // Changed to absolute URL
+    main: `./${s.id}/code.js`, 
     type: s.type,
     nsfw: s.nsfw || false,
     description: `Shiru extension for ${s.name}`,
     icon: s.icon,
-    update: `${REPO_BASE}/shiru/index.json`,
+    update: "gh:ReWelp/HayasexShiru-Extensions/shiru",
   })),
 };
 
 writeFileSync("./shiru/index.json", JSON.stringify(shiruIndex, null, 2));
 
-// Hayase index (already correct)
+// Hayase index
 const hayaseIndex = sources.map((s) => ({
   id: `hayase.extension.${s.id}`,
   name: s.name,
@@ -55,10 +55,10 @@ const hayaseIndex = sources.map((s) => ({
 
 writeFileSync("./hayase/index.json", JSON.stringify(hayaseIndex, null, 2));
 
-// Root index for gh: shortcut
+// Root index for gh:
 const rootIndex = [
   {
-    "main": "shiru/index.json"
+    "main": "gh:ReWelp/HayasexShiru-Extensions/shiru" // Use gh: shortcut here
   }
 ];
 
