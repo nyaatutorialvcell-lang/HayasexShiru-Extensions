@@ -2,7 +2,7 @@
   {
     "id": "nyaa",
     "name": "Nyaa",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "type": "torrent",
     "main": "./shiru/nyaa/code.js",
     "description": "Shiru extension for Nyaa",
@@ -12,7 +12,7 @@
   {
     "id": "sukebei",
     "name": "Sukebei",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "type": "torrent",
     "nsfw": true,
     "main": "./shiru/sukebei/code.js",
