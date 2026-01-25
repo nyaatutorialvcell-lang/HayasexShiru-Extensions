@@ -1,26 +1,24 @@
-{
-  "sources": [
-    {
-      "id": "nyaa",
-      "name": "Nyaa",
-      "version": "1.0.1",
-      "main": "./nyaa/code",
-      "type": "torrent",
-      "nsfw": false,
-      "description": "Shiru extension for Nyaa",
-      "icon": "https://nyaa.si/static/favicon.png",
-      "update": "gh:ReWelp/HayasexShiru-Extensions/shiru"
-    },
-    {
-      "id": "sukebei",
-      "name": "Sukebei",
-      "version": "1.0.1",
-      "main": "./sukebei/code",
-      "type": "torrent",
-      "nsfw": true,
-      "description": "Shiru extension for Sukebei",
-      "icon": "https://sukebei.nyaa.si/static/favicon.png",
-      "update": "gh:ReWelp/HayasexShiru-Extensions/shiru"
-    }
-  ]
-}
+[
+  {
+    "id": "nyaa",
+    "name": "Nyaa",
+    "version": "1.0.1",
+    "main": "sources/nyaa",
+    "type": "torrent",
+    "nsfw": false,
+    "description": "Shiru extension for Nyaa",
+    "icon": "https://nyaa.si/static/favicon.png",
+    "update": "gh:ReWelp/HayasexShiru-Extensions/shiru"
+  },
+  {
+    "id": "sukebei",
+    "name": "Sukebei",
+    "version": "1.0.1",
+    "main": "sources/sukebei",
+    "type": "torrent",
+    "nsfw": true,
+    "description": "Shiru extension for Sukebei",
+    "icon": "https://sukebei.nyaa.si/static/favicon.png",
+    "update": "gh:ReWelp/HayasexShiru-Extensions/shiru"
+  }
+]

@@ -1,4 +1,4 @@
-import AbstractSource from '../sources/abstract.js'
+import AbstractSource from './abstract.js'
 
 /**
  * @typedef {import('../sources/index.d.ts').TorrentQuery} TorrentQuery

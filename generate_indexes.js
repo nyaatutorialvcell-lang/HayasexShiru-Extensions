@@ -20,22 +20,32 @@ const sources = [
 
 const REPO_BASE = "https://raw.githubusercontent.com/ReWelp/HayasexShiru-Extensions/main";
 
-// Shiru index - FIXED: Remove .js extension from main
-const shiruIndex = {
-  sources: sources.map((s) => ({
-    id: s.id,
-    name: s.name,
-    version: s.version,
-    main: `./${s.id}/code`,  // CHANGED: No .js extension!
-    type: s.type,
-    nsfw: s.nsfw || false,
-    description: `Shiru extension for ${s.name}`,
-    icon: s.icon,
-    update: "gh:ReWelp/HayasexShiru-Extensions/shiru",
-  })),
-};
+// Shiru index - MUST be an ARRAY like the community repo
+const shiruIndex = sources.map((s) => ({
+  id: s.id,
+  name: s.name,
+  version: s.version,
+  main: `sources/${s.id}`,  // Changed path to match community structure
+  type: s.type,
+  nsfw: s.nsfw || false,
+  description: `Shiru extension for ${s.name}`,
+  icon: s.icon,
+  update: "gh:ReWelp/HayasexShiru-Extensions/shiru",
+}));
 
 writeFileSync("./shiru/index.json", JSON.stringify(shiruIndex, null, 2));
+
+// ALSO need to create a package.json in shiru folder
+const shiruPackage = {
+  "name": "@rewelp/shiru-extensions",
+  "version": "1.0.0",
+  "description": "Nyaa and Sukebei extensions for Shiru",
+  "license": "GPLv3",
+  "main": "index.json",
+  "types": "sources/index.d.ts"
+};
+
+writeFileSync("./shiru/package.json", JSON.stringify(shiruPackage, null, 2));
 
 // Hayase index (stays the same)
 const hayaseIndex = sources.map((s) => ({
