@@ -33,9 +33,7 @@ const shiruIndex = {
   })),
 };
 
-// Write to file
 writeFileSync("./shiru/index.json", JSON.stringify(shiruIndex, null, 2));
-console.log("Shiru index generated successfully!");
 
 // Hayase index
 const hayaseIndex = sources.map((s) => ({
@@ -54,4 +52,14 @@ const hayaseIndex = sources.map((s) => ({
 }));
 
 writeFileSync("./hayase/index.json", JSON.stringify(hayaseIndex, null, 2));
-console.log("Hayase index generated successfully!");
+
+// Root index for gh: shortcut
+const rootIndex = [
+  {
+    "main": "shiru/index.json"
+  }
+];
+
+writeFileSync("./index.json", JSON.stringify(rootIndex, null, 2));
+
+console.log("All indexes generated successfully!");
