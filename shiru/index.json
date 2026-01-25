@@ -6,18 +6,19 @@
       "version": "1.0.1",
       "main": "./nyaa/code.js",
       "type": "torrent",
+      "nsfw": false,
       "description": "Shiru extension for Nyaa",
       "icon": "https://nyaa.si/static/favicon.png",
       "update": "https://raw.githubusercontent.com/ReWelp/HayasexShiru-Extensions/main/shiru/index.json"
     },
     {
       "id": "sukebei",
-      "name": "Sukebei", 
+      "name": "Sukebei",
       "version": "1.0.1",
       "main": "./sukebei/code.js",
       "type": "torrent",
       "nsfw": true,
-      "description": "NSFW torrent source (Sukebei)",
+      "description": "Shiru extension for Sukebei",
       "icon": "https://sukebei.nyaa.si/static/favicon.png",
       "update": "https://raw.githubusercontent.com/ReWelp/HayasexShiru-Extensions/main/shiru/index.json"
     }

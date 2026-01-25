@@ -7,7 +7,10 @@
     "accuracy": "medium",
     "ratio": 0,
     "media": "sub",
-    "languages": ["all"],
+    "languages": [
+      "all"
+    ],
+    "nsfw": false,
     "icon": "https://nyaa.si/static/favicon.png",
     "update": "https://raw.githubusercontent.com/ReWelp/HayasexShiru-Extensions/main/hayase/index.json",
     "code": "https://raw.githubusercontent.com/ReWelp/HayasexShiru-Extensions/main/hayase/nyaa.js"
@@ -20,7 +23,9 @@
     "accuracy": "medium",
     "ratio": 0,
     "media": "both",
-    "languages": ["all"],
+    "languages": [
+      "all"
+    ],
     "nsfw": true,
     "icon": "https://sukebei.nyaa.si/static/favicon.png",
     "update": "https://raw.githubusercontent.com/ReWelp/HayasexShiru-Extensions/main/hayase/index.json",

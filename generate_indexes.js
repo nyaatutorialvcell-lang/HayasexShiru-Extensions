@@ -1,4 +1,4 @@
-const fs = require("fs");
+import { writeFileSync } from 'fs';
 
 const sources = [
   {
@@ -23,7 +23,7 @@ const shiruIndex = {
   sources: sources.map((s) => ({
     id: s.id,
     name: s.name,
-    version: s.version, 
+    version: s.version,
     main: `./${s.id}/code.js`,
     type: s.type,
     nsfw: s.nsfw || false,
@@ -34,7 +34,7 @@ const shiruIndex = {
 };
 
 // Write to file
-fs.writeFileSync("./shiru/index.json", JSON.stringify(shiruIndex, null, 2));
+writeFileSync("./shiru/index.json", JSON.stringify(shiruIndex, null, 2));
 console.log("Shiru index generated successfully!");
 
 // Hayase index
@@ -53,4 +53,5 @@ const hayaseIndex = sources.map((s) => ({
   code: `https://raw.githubusercontent.com/ReWelp/HayasexShiru-Extensions/main/hayase/${s.id}.js`,
 }));
 
-fs.writeFileSync("./hayase/index.json", JSON.stringify(hayaseIndex, null, 2));
+writeFileSync("./hayase/index.json", JSON.stringify(hayaseIndex, null, 2));
+console.log("Hayase index generated successfully!");
