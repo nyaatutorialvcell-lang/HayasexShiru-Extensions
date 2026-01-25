@@ -20,13 +20,13 @@ const sources = [
 
 const REPO_BASE = "https://raw.githubusercontent.com/ReWelp/HayasexShiru-Extensions/main";
 
-// Shiru index
+// Shiru index - FIXED: Remove .js extension from main
 const shiruIndex = {
   sources: sources.map((s) => ({
     id: s.id,
     name: s.name,
     version: s.version,
-    main: `./${s.id}/code.js`, 
+    main: `./${s.id}/code`,  // CHANGED: No .js extension!
     type: s.type,
     nsfw: s.nsfw || false,
     description: `Shiru extension for ${s.name}`,
@@ -37,7 +37,7 @@ const shiruIndex = {
 
 writeFileSync("./shiru/index.json", JSON.stringify(shiruIndex, null, 2));
 
-// Hayase index
+// Hayase index (stays the same)
 const hayaseIndex = sources.map((s) => ({
   id: `hayase.extension.${s.id}`,
   name: s.name,
@@ -55,10 +55,10 @@ const hayaseIndex = sources.map((s) => ({
 
 writeFileSync("./hayase/index.json", JSON.stringify(hayaseIndex, null, 2));
 
-// Root index for gh:
+// Root index
 const rootIndex = [
   {
-    "main": "gh:ReWelp/HayasexShiru-Extensions/shiru" // Use gh: shortcut here
+    "main": "gh:ReWelp/HayasexShiru-Extensions/shiru"
   }
 ];
 
