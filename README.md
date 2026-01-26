@@ -18,14 +18,14 @@ Includes **Nyaa** and **Sukebei** support.
 
 ### Hayase
 
-Paste this URL into **Settings → Extensions → Sources**:
+Paste this URL into **Settings → Extensions → Repositories**:
 
 https://raw.githubusercontent.com/ReWelp/HayasexShiru-Extensions/main/hayase/index.json
 
 
 ### Shiru
 
-Paste this URL into **Settings → Sources**:
+Paste this URL into **Settings → Extensions → Sources**:
 
 https://raw.githubusercontent.com/ReWelp/HayasexShiru-Extensions/main/shiru/index.json
 
